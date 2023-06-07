@@ -1,0 +1,15 @@
+$grey-1: #73777d;
+$grey-2: #707070;
+$grey-3: #36393e;
+$primary-color: #ff9100;
+$dark-color: #16181b;
+
+.App {
+  padding: 30px 60px 0 60px;
+  background-color: $dark-color;
+  color: $grey-1;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+
+}

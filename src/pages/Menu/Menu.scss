@@ -1,0 +1,52 @@
+.menu-wrapper {
+  min-height: 100vh;
+  margin-top: 40px;
+}
+
+.no-items {
+  color: #fff;
+  text-align: center;
+  margin-top: 120px;
+}
+
+.top-line {
+  height: 30px;
+  width: 100%;
+  background-color: #36393e;
+  // margin-top: 20px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-weight: 600;
+  line-height: 20px;
+
+  select {
+    // appearance: none;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    padding: 7px 10px;
+    margin: 0;
+    width: 190px;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    color: #7a7f84;
+
+
+  }
+
+  span {
+    color: #ff9100;
+    margin-right: 5px;
+  }
+}
+
+.content-menu {
+  padding: 20px 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+}

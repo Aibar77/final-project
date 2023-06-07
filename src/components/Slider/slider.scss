@@ -1,0 +1,22 @@
+// .carousel {
+//   max-width: 100% !important;
+//   height: auto !important;
+// }
+
+.carousel-wrapper {
+  margin-top: 70px;
+  object-fit: cover;
+  // height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  position: absolute;
+
+  div {
+    padding-right: 7px;
+  }
+}
+
+.carousel .slide img {
+  object-fit: cover !important;
+  max-width: 100% !important;
+}
