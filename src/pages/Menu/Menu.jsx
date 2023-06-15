@@ -1,15 +1,17 @@
 import "./Menu.scss";
 import { useState, useEffect } from "react";
-import axios from "axios";
+// import axios from "axios";
 import Card from "../../components/Card/Card";
+import data from "../../services/wines-2.json";
 const Menu = ({ searchValue }) => {
   const [posts, setPosts] = useState([]);
   const [wineSort, setWineSort] = useState("reds");
   const [sortedItems, setSortedItems] = useState("default");
   useEffect(() => {
-    axios
-      .get(`https://api.sampleapis.com/wines/${wineSort}`)
-      .then((data) => setPosts(data.data.slice(80, 100)));
+    // axios
+    //   .get(`https://api.sampleapis.com/wines/${wineSort}`)
+    //   .then((data) => setPosts(data.data.slice(80, 100)));
+    setPosts(data[wineSort]);
   }, [wineSort]);
   const sortedPosts = posts.sort(function (a, b) {
     if (sortedItems === "default") return;
